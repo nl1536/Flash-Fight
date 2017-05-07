@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 114ae745183ac4537abd9619a139a94b
-timeCreated: 1494175160
+timeCreated: 1494178887
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,12 +28,12 @@ TextureImporter:
     21300042: Keys_21
     21300044: Keys_22
     21300046: Keys_23
-  serializedVersion: 4
+  serializedVersion: 2
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
     linearTexture: 0
+    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -45,19 +45,23 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 6
+  generateCubemap: 0
   cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: 1
-  maxTextureSize: 2048
+  textureFormat: -2
+  maxTextureSize: 512
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -65,39 +69,10 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  textureShape: 1
-  maxTextureSizeSet: 0
-  compressionQualitySet: 0
-  textureFormatSet: 0
-  platformSettings:
-  - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+  buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -106,7 +81,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 183
+        y: 181
         width: 86
         height: 71
       alignment: 0
@@ -119,7 +94,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 118
-        y: 183
+        y: 181
         width: 86
         height: 71
       alignment: 0
@@ -132,7 +107,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 243
-        y: 183
+        y: 181
         width: 86
         height: 71
       alignment: 0
@@ -145,7 +120,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 361
-        y: 183
+        y: 181
         width: 85
         height: 71
       alignment: 0
@@ -158,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 462
-        y: 183
+        y: 181
         width: 85
         height: 71
       alignment: 0
@@ -171,7 +146,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 579
-        y: 183
+        y: 181
         width: 85
         height: 71
       alignment: 0
@@ -184,7 +159,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 700
-        y: 183
+        y: 181
         width: 85
         height: 71
       alignment: 0
@@ -197,7 +172,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 816
-        y: 183
+        y: 181
         width: 85
         height: 71
       alignment: 0
@@ -210,7 +185,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 93
+        y: 91
         width: 85
         height: 71
       alignment: 0
@@ -223,7 +198,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 120
-        y: 93
+        y: 91
         width: 85
         height: 71
       alignment: 0
@@ -236,7 +211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 245
-        y: 93
+        y: 91
         width: 85
         height: 71
       alignment: 0
@@ -249,7 +224,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 363
-        y: 93
+        y: 91
         width: 85
         height: 71
       alignment: 0
@@ -262,7 +237,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 463
-        y: 93
+        y: 91
         width: 85
         height: 71
       alignment: 0
@@ -275,7 +250,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 579
-        y: 93
+        y: 91
         width: 86
         height: 71
       alignment: 0
@@ -288,7 +263,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 700
-        y: 93
+        y: 91
         width: 86
         height: 71
       alignment: 0
@@ -301,7 +276,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 817
-        y: 93
+        y: 91
         width: 85
         height: 71
       alignment: 0
@@ -314,7 +289,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
+        y: 1
         width: 86
         height: 71
       alignment: 0
@@ -327,7 +302,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 118
-        y: 3
+        y: 1
         width: 86
         height: 71
       alignment: 0
@@ -340,7 +315,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 243
-        y: 3
+        y: 1
         width: 86
         height: 71
       alignment: 0
@@ -353,7 +328,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 361
-        y: 3
+        y: 1
         width: 85
         height: 71
       alignment: 0
@@ -366,7 +341,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 463
-        y: 6
+        y: 4
         width: 86
         height: 71
       alignment: 0
@@ -379,7 +354,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 580
-        y: 6
+        y: 4
         width: 86
         height: 71
       alignment: 0
@@ -392,7 +367,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 701
-        y: 6
+        y: 4
         width: 86
         height: 71
       alignment: 0
@@ -405,7 +380,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 817
-        y: 6
+        y: 4
         width: 86
         height: 71
       alignment: 0

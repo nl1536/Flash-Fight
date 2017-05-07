@@ -3,8 +3,7 @@ using System.Collections;
 
 public class SwitchScene : UnityEngine.MonoBehaviour
 {
-	public void WhenPlayButtonPressed()
-	{
+	public void WhenPlayButtonPressed() {
 		SceneManager.LoadScene("Game");
 	}
 

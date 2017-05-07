@@ -11,10 +11,13 @@ public class PlayerPlay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         timeLeftUntilSwitch = 0f;
+        GetComponent<SpriteRenderer>().enabled = true;
     }
 
     // Update is called once per frame
     void Update() {
+
+        if (GameObject.Find("Countdown").GetComponent<Countdown>().gamePlay == true) {
 
         // time left until keycode switches
         timeLeftUntilSwitch -= Time.deltaTime;
@@ -28,21 +31,11 @@ public class PlayerPlay : MonoBehaviour {
             GetComponent<Animator>().SetBool("Fight", false);
         }
 
-        // keycode switches every second
-        if (timeLeftUntilSwitch <= 0) {
-            Debug.Log("Switch");
-            chosenKeycode = playerKeyCodes[Random.Range(0, playerKeyCodes.Length)];
-            timeLeftUntilSwitch = 1f;
-        }
-
-        if (GameObject.Find("Timer").GetComponent<Timer>().timeLeft <= 0) {
-            if (GetComponent<PlayerLeftScore>().playerLeftScoreNumber <
-                GameObject.Find("PlayerRight").GetComponent<PlayerRightScore>().playerRightScoreNumber) {
-                GetComponent<Animator>().SetTrigger("Lose");
-            }
-            if (GetComponent<PlayerLeftScore>().playerLeftScoreNumber >
-                GameObject.Find("PlayerRight").GetComponent<PlayerRightScore>().playerRightScoreNumber) {
-                GetComponent<Animator>().SetTrigger("Win");
+            // keycode switches every second
+            if (timeLeftUntilSwitch <= 0) {
+                Debug.Log("Switch");
+                chosenKeycode = playerKeyCodes[Random.Range(0, playerKeyCodes.Length)];
+                timeLeftUntilSwitch = 1f;
             }
         }
     }
