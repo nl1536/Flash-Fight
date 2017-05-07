@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
 
-    float timeLeft;
-    int timeLeftDisplay;
+    public float timeLeft;
+    public int timeLeftDisplay;
 
 	// Use this for initialization
 	void Start () {

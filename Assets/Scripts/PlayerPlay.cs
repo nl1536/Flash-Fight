@@ -6,11 +6,11 @@ public class PlayerPlay : MonoBehaviour {
 
     public KeyCode[] playerKeyCodes;
     public KeyCode chosenKeycode;
-    float timeLeftUntilSwitch = 1f;
+    float timeLeftUntilSwitch;
 
 	// Use this for initialization
 	void Start () {
-        chosenKeycode = playerKeyCodes[Random.Range(0, playerKeyCodes.Length)];
+        timeLeftUntilSwitch = 0f;
     }
 
     // Update is called once per frame
@@ -20,8 +20,12 @@ public class PlayerPlay : MonoBehaviour {
         timeLeftUntilSwitch -= Time.deltaTime;
 
         // correct key pressed = point
-        if (Input.GetKeyDown(chosenKeycode)) {
+        if (Input.GetKey(chosenKeycode)) {
             Debug.Log("Correct key pressed");
+            GetComponent<Animator>().SetBool("Fight", true);
+        }
+        else {
+            GetComponent<Animator>().SetBool("Fight", false);
         }
 
         // keycode switches every second
@@ -30,5 +34,16 @@ public class PlayerPlay : MonoBehaviour {
             chosenKeycode = playerKeyCodes[Random.Range(0, playerKeyCodes.Length)];
             timeLeftUntilSwitch = 1f;
         }
-	}
+
+        if (GameObject.Find("Timer").GetComponent<Timer>().timeLeft <= 0) {
+            if (GetComponent<PlayerLeftScore>().playerLeftScoreNumber <
+                GameObject.Find("PlayerRight").GetComponent<PlayerRightScore>().playerRightScoreNumber) {
+                GetComponent<Animator>().SetTrigger("Lose");
+            }
+            if (GetComponent<PlayerLeftScore>().playerLeftScoreNumber >
+                GameObject.Find("PlayerRight").GetComponent<PlayerRightScore>().playerRightScoreNumber) {
+                GetComponent<Animator>().SetTrigger("Win");
+            }
+        }
+    }
 }
