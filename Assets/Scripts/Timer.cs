@@ -106,9 +106,9 @@ public class Timer : MonoBehaviour {
             timeLeftDisplay = 0;
             GetComponent<Text>().fontSize = 60;
             GameObject.Find("NewRoundButton").GetComponent<TargetJoint2D>().target =
-                new Vector2(GameObject.Find("NewRoundButton").GetComponent<TargetJoint2D>().target.x, -4f);
+                new Vector2(GameObject.Find("NewRoundButton").GetComponent<TargetJoint2D>().target.x, 0f);
             GameObject.Find("TitleButton").GetComponent<TargetJoint2D>().target =
-                new Vector2(GameObject.Find("TitleButton").GetComponent<TargetJoint2D>().target.x, -4f);
+                new Vector2(GameObject.Find("TitleButton").GetComponent<TargetJoint2D>().target.x, -1.5f);
         if (timeLeft <= 0 && timeLeft > -.03) {
             GetComponent<AudioSource>().PlayOneShot(EndTime);
             }

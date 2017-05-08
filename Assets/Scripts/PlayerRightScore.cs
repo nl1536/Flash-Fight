@@ -40,6 +40,8 @@ public class PlayerRightScore : MonoBehaviour {
                 }
                 if (playerRightScoreNumber > GameObject.Find("PlayerLeft").GetComponent<PlayerLeftScore>().playerLeftScoreNumber) {
                     GetComponent<Animator>().SetTrigger("Win");
+                    GameObject.Find("WinnerRight").GetComponent<TargetJoint2D>().target =
+                        new Vector2(GameObject.Find("WinnerRight").GetComponent<TargetJoint2D>().target.x, 2.6f);
                 }
             }
         }
